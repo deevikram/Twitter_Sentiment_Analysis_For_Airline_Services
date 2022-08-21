@@ -30,6 +30,18 @@ According to the Twitter help center, a tweet is any message that is posted to t
 - tweet_location- city location data of the tweets
 - user_timezone- timezone information (EST/PST etc)
 
+### The analysis below has the following sections:
+- Loading and importing packages
+- Removing warnings from python notebooks
+- Loading the dataset
+- Preview of the dataset
+- Descriptive statistics for the dataset
+- Exploratory Data Analysis - distribution of tweets among airlines, distribution of sentiment across tweets, plots of negative reasons, word clouds for positive and negative sentiments
+- Data preprocessing/model preparation - html tag removal, removal of numbers, removal of special characters, and punctuations, removal of stop words, conversion to lowercase, lemmatization/stemming, tokenization, joining the words to convert back to text, vectorization with countVectorizer and TfidfVectorizer
+- NLP Model - building the model (random forest)
+- NNLP model performance improvement - analysis of model performance, improvement of the model
+- Summary and key takeaways - final conclusions and summary of the analysis
+
 ### EDA excerpts
 ![image](https://user-images.githubusercontent.com/83994337/164948996-8a9fb40a-d16c-41dd-b6bb-79f5bdda4e7a.png)
 ![image](https://user-images.githubusercontent.com/83994337/164949045-32421d78-6a7a-49ce-9cbe-025d89c4aac6.png)
