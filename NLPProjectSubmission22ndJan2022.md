@@ -8,7 +8,7 @@
 ### Objective
 <ol>
     <li>Build a natural language processing (NLP) model</li>
-    <li>Sentiment analysis and classification of tweets for US airlines</li>
+    <li>Sentiment analysis and classification of tweets for US airlines</li></ol>
 
 ### Data Information/Variables
 <p> <strong>tweet_id</strong> - unique ID assigned to each tweet (composed of timestamp,sequence number, and worker number)<br>
@@ -39,7 +39,7 @@
     <li> Data preprocessing/model preparation - html tag removal, removal of numbers, removal of special characters, and punctuations, removal of stop words, conversion to lowercase, lemmatization/stemming, tokenization, joining the words to convert back to text, vectorization with countVectorizer and TfidfVectorizer</li>
     <li> <strong>NLP Model</strong> - building the model (random forest)</li>
     <li> <strong>NNLP model performance improvement </strong> - analysis of model performance, improvement of the model</li>
-    <li> Summary and key takeaways - final conclusions and summary of the analysis </li>
+    <li> Summary and key takeaways - final conclusions and summary of the analysis </li></ol>
 
 ## 1. Loading and importing packages
 
@@ -666,7 +666,7 @@ tweetData.describe(include=["object"]).T
     <li> The tweet_coord is represented here as a categorical column but represents location co-ordinates. There are only 832 unique values, which indicates that multiple people tweet from the similar co-ords.</li>
     <li> The tweet_created column has a large number of unique values (14,247).</li>
     <li> The tweet_location column has 3081 unique cities out of which Boston, MA occured 157 times. </li>
-    <li> The user_timezone is a column that has the timezone information and we can see that there are 85 unique timezones represented in the dataset, out of which Eastern Time (US and Canada) occured 3744 times. So a large number of tweeters/posters live in a geographic area where the timezone is EST. </li>
+    <li> The user_timezone is a column that has the timezone information and we can see that there are 85 unique timezones represented in the dataset, out of which Eastern Time (US and Canada) occured 3744 times. So a large number of tweeters/posters live in a geographic area where the timezone is EST. </li></ol>
 
 
 ```python
@@ -764,7 +764,8 @@ plt.show()
 
 
     
-![png](output_34_0.png)
+![image](https://user-images.githubusercontent.com/83994337/185791507-2847f8e7-1059-4d94-944e-5e53dfa00079.png)
+
     
 
 
@@ -788,8 +789,7 @@ plt.show()
 
 
     
-![png](output_36_0.png)
-    
+![image](https://user-images.githubusercontent.com/83994337/185791535-7f926173-9eb0-473f-a273-3a9c944b4daa.png)    
 
 
 #### Observation
@@ -844,8 +844,7 @@ sns.boxplot(
 
 
     
-![png](output_38_1.png)
-    
+![image](https://user-images.githubusercontent.com/83994337/185791559-44da268e-9eea-4a63-a513-148b0e51da89.png)    
 
 
 #### Observations
@@ -866,7 +865,7 @@ sns.countplot(x="airline_sentiment", hue="airline", data=tweetData1)
 
 
     
-![png](output_40_1.png)
+![image](https://user-images.githubusercontent.com/83994337/185791704-c2876392-73f6-4d04-8cf1-1826c44137e9.png)    
     
 
 
@@ -888,8 +887,7 @@ sns.countplot(x="airline",data=tweetData1)
 
 
     
-![png](output_42_1.png)
-    
+![image](https://user-images.githubusercontent.com/83994337/185791727-b474c86c-21e3-4d46-829f-e8563889d88e.png)    
 
 
 #### Observations
@@ -910,8 +908,7 @@ sns.countplot(x="airline_sentiment",data=tweetData1)
 
 
     
-![png](output_44_1.png)
-    
+![image](https://user-images.githubusercontent.com/83994337/185791736-35117678-f63a-4f7c-b4e3-2067451006ee.png)    
 
 
 #### Observations
@@ -928,8 +925,7 @@ plt.show()
 
 
     
-![png](output_46_0.png)
-    
+![image](https://user-images.githubusercontent.com/83994337/185791742-45873bb5-2088-416f-ada6-a65651a86351.png)    
 
 
 #### Observations
@@ -966,8 +962,7 @@ plt.show()
 
 
     
-![png](output_50_0.png)
-    
+![image](https://user-images.githubusercontent.com/83994337/185791755-283284c7-1aae-44fd-9946-48e187890336.png)    
 
 
 #### Observations
@@ -1005,8 +1000,7 @@ plt.show()
 
 
     
-![png](output_54_0.png)
-    
+![image](https://user-images.githubusercontent.com/83994337/185791777-382d07b8-ca2e-489c-80c3-17a4bdddf58a.png)    
 
 
 #### Observation
@@ -2043,8 +2037,7 @@ plt.show()
 
 
     
-![png](output_98_0.png)
-    
+![image](https://user-images.githubusercontent.com/83994337/185791849-4ba6427e-150b-4a7c-8ac7-e8fb22033414.png)    
 
 
 #### Observations
@@ -2118,8 +2111,7 @@ plt.show()
 
 
     
-![png](output_103_1.png)
-    
+![image](https://user-images.githubusercontent.com/83994337/185791865-8d6b40d1-ad7a-40e2-9429-7ae18a166aa3.png)    
 
 
 #### Observations
@@ -2152,8 +2144,7 @@ plt.show()
 
 
     
-![png](output_105_0.png)
-    
+![image](https://user-images.githubusercontent.com/83994337/185791885-3f76ff65-4e98-4c9a-be74-7fa0afe2e35d.png)    
 
 
 #### Observations
@@ -2257,8 +2248,7 @@ plt.show()
 
 
     
-![png](output_113_0.png)
-    
+![image](https://user-images.githubusercontent.com/83994337/185791902-e67491e2-0e61-4c17-a1d1-638d780b9b4c.png)    
 
 
 #### Observations
@@ -2332,8 +2322,7 @@ sns.heatmap(df_cm, annot=True, fmt='g')
 
 
     
-![png](output_118_2.png)
-    
+![image](https://user-images.githubusercontent.com/83994337/185791913-e0359310-8533-4adb-839c-72815c8ef0a2.png)    
 
 
 #### Observations
@@ -2366,8 +2355,7 @@ plt.show()
 
 
     
-![png](output_120_0.png)
-    
+![image](https://user-images.githubusercontent.com/83994337/185791929-aad99c75-3f8e-4736-831d-c804a1aaf4cc.png)    
 
 
 #### Observations
@@ -2501,8 +2489,7 @@ plt.show()
 
 
     
-![png](output_124_0.png)
-    
+![image](https://user-images.githubusercontent.com/83994337/185791945-bbb74f0f-6eaf-428b-a2b1-b6fdd23a5b63.png)    
 
 
 #### Observations
